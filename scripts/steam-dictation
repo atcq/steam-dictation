@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# install directory of our nerd-dictation package
+install_dir="$HOME/.local/share/nerd-dictation"
+
+# activate venv with vosk installed
+source $install_dir/vosk/bin/activate
+
+# run nerd-dictation with all the arguments we got, also new PATH so we can find xdotool
+PATH=$PATH:$install_dir $install_dir/nerd-dictation $*

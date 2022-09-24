@@ -1,0 +1,163 @@
+###########################
+# xbindkeys configuration #
+###########################
+#
+# Version: 1.8.7
+#
+# If you edit this file, do not forget to uncomment any lines
+# that you change.
+# The pound(#) symbol may be used anywhere for comments.
+#
+# To specify a key, you can use 'xbindkeys --key' or
+# 'xbindkeys --multikey' and put one of the two lines in this file.
+#
+# The format of a command line is:
+#    "command to start"
+#       associated key
+#
+# List of modifier:
+#   Release, Control, Shift, Mod1 (Alt), Mod2 (NumLock),
+#   Mod3 (CapsLock), Mod4, Mod5 (Scroll).
+#
+
+# The release modifier is not a standard X modifier, but you can
+# use it if you want to catch release events instead of press events
+
+# Start/end dictation
+# To begin dictation use "steam-dictation begin" as the "(Scheme function)".
+# To end dictation use "steam-dictation end" as the "(Scheme function)".
+#
+# To use only one key and press it once to start dictation and a second time
+# to end dictation use "steam-dict-wrapper" as the "(Scheme function)".
+#
+# For now we use the keys Prior/Next to begin/end dictation and Scroll_Lock
+# for the wrapper script!
+#
+
+"steam-dictation begin"
+    m:0x0 + c:112
+    Prior
+
+"steam-dictation end"
+    m:0x0 + c:117
+    Next
+
+"steam-dict-wrapper"
+    m:0x0 + c:78
+    Scroll_Lock
+
+#
+# Below are some of the more exotic keys you can find on a standard keyboard
+# that will most likely not share a shortcut with all the games you are 
+# running.
+# If you find a game uses the same key for an ingame function, you don't have
+# to change it for all your other games, just add a different key here and 
+# make a new custom controller config for that game.
+#
+# EXOTIC KEYS!?!!
+#
+#
+#"(Scheme function)"
+#    m:0x0 + c:112
+#    Prior
+#"(Scheme function)"
+#    m:0x0 + c:117
+#    Next
+#"(Scheme function)"
+#    m:0x0 + c:115
+#    End
+#"(Scheme function)"
+#    m:0x0 + c:110
+#    Home
+#"(Scheme function)"
+#    m:0x0 + c:119
+#    Delete
+#"(Scheme function)"
+#    m:0x0 + c:118
+#    Insert
+#"(Scheme function)"
+#    m:0x0 + c:111
+#    Up
+#"(Scheme function)"
+#    m:0x0 + c:116
+#    Down
+#"(Scheme function)"
+#    m:0x0 + c:113
+#    Left
+#"(Scheme function)"
+#    m:0x0 + c:114
+#    Right
+#"(Scheme function)"
+#    m:0x0 + c:107
+#    Print
+#"(Scheme function)"
+#    m:0x0 + c:78
+#    Scroll_Lock
+#"(Scheme function)"
+#    m:0x0 + c:127
+#    Pause
+#"(Scheme function)"
+#    m:0x0 + c:135
+#    Menu
+#"(Scheme function)"
+#    m:0x0 + c:106
+#    KP_Divide
+#"(Scheme function)"
+#    m:0x0 + c:63
+#    KP_Multiply
+#"(Scheme function)"
+#    m:0x0 + c:82
+#    KP_Subtract
+#"(Scheme function)"
+#    m:0x0 + c:86
+#    KP_Add
+#"(Scheme function)"
+#    m:0x0 + c:104
+#    KP_Enter
+#"(Scheme function)"
+#    m:0x0 + c:91
+#    KP_Delete
+#"(Scheme function)"
+#    m:0x0 + c:67
+#    F1
+#"(Scheme function)"
+#    m:0x0 + c:68
+#    F2
+#"(Scheme function)"
+#    m:0x0 + c:69
+#    F3
+#"(Scheme function)"
+#    m:0x0 + c:70
+#    F4
+#"(Scheme function)"
+#    m:0x0 + c:71
+#    F5
+#"(Scheme function)"
+#    m:0x0 + c:72
+#    F6
+#"(Scheme function)"
+#    m:0x0 + c:73
+#    F7
+#"(Scheme function)"
+#    m:0x0 + c:74
+#    F8
+#"(Scheme function)"
+#    m:0x0 + c:75
+#    F9
+#"(Scheme function)"
+#    m:0x0 + c:76
+#    F10
+#"(Scheme function)"
+#    m:0x0 + c:76
+#    F10
+#"(Scheme function)"
+#    m:0x0 + c:95
+#    F11
+#"(Scheme function)"
+#    m:0x0 + c:96
+#    F12
+#
+#
+##################################
+# End of xbindkeys configuration #
+##################################

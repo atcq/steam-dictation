@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# primitive run check
+ps -e | grep "steam-dictation$"
+run_check=$?
+echo $run_check
+
+if [ $run_check -eq 0 ]; then
+    steam-dictation end
+else
+    steam-dictation begin
+fi

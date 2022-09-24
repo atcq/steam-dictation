@@ -1,0 +1,9 @@
+#!/bin/sh
+bin_dir="$HOME/.local/share/nerd-dictation/xdotool-bin"
+if [ -n "$LD_LIBRARY_PATH" ]; then
+  LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$bin_dir
+else
+  LD_LIBRARY_PATH=$bin_dir
+fi
+export LD_LIBRARY_PATH
+exec $bin_dir/xdotool "$@"
